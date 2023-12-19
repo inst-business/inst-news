@@ -1,0 +1,32 @@
+
+.Tags
+  order: 1
+  display: flex
+  flex-direction: column
+
+  h4
+    margin-bottom: .5rem
+    font-weight: bold
+
+  .List
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+
+    a
+      text-transform: capitalize
+      display: block
+      color: var(--grey-800)
+      transition: var(--transition)
+
+      &:hover
+        color: var(--primary-500)
+
+
+@media screen and (min-width: 992px)
+  
+  .Tags
+    order: 0
+
+    .List
+      display: grid
+      grid-template-columns: 1fr

@@ -1,0 +1,24 @@
+
+.Section
+  display: grid
+  gap: 2rem 4rem
+  padding-bottom: 3rem
+
+  h2
+    text-transform: none
+    font-weight: bold
+
+  .Image
+    border-radius: var(--border-radius)
+    height: 500px
+
+
+@media screen and (min-width: 992px)
+
+  .Section
+    grid-template-columns: 1fr 1fr
+    align-items: center
+    height: 400px
+  
+    .Image
+      height: 100%

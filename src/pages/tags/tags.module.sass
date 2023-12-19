@@ -1,0 +1,38 @@
+
+.Section
+  display: grid
+  gap: 2rem
+  padding-bottom: 3rem
+
+  .Tag
+    background: var(--grey-700)
+    border-radius: var(--border-radius)
+    text-align: center
+    color: var(--white)
+    transition: var(--transition)
+    padding: .75rem 0
+
+    &:hover
+      background: var(--primary-500)
+
+    h5
+      margin-top: 0
+      font-size: var(--font-lg)
+      font-weight: 600
+    
+    p
+      font-size: var(--font-sm)
+
+    h5,
+    p
+      margin-bottom: 0
+
+
+@media screen and (min-width: 576px)
+  .Section
+    grid-template-columns: 1fr 1fr
+
+
+@media screen and (min-width: 992px)
+  .Section
+    grid-template-columns: 1fr 1fr 1fr
